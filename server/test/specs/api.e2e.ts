@@ -1,11 +1,10 @@
 import chai = require('chai')
 import chaiHttp = require('chai-http')
-import supertest = require('supertest');
-import app = require('../../start');
+
 const expect = require('chai').expect;
 chai.use(chaiHttp);
 
-const url = 'http://localhost:' + process.env.PORT;
+const url = 'http://localhost:3200';
 
 // send requesti without authToken
 describe('Verify Routes Protected', () => {
@@ -18,6 +17,7 @@ describe('Verify Routes Protected', () => {
     });
 
     it('/UserPosts is protect', () => {
+        console.log(url)
              chai.request(url)
             .get('/UserPosts')
             .end(function (err, res) {

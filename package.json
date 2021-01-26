@@ -7,7 +7,7 @@
     "start": "node ./dist/server/main.js",
     "start:dev": "NODE_ENV=development nodemon --watch '*.ts' --exec 'ts-node' ./server/start.ts",
     "build": "tsc -p",
-    "test": "NODE_ENV=test nodemon --watch '*.ts' --exec 'ts-node' ./server/start.ts  npx wdio wdio.conf.js"
+    "test": "npx wdio wdio.conf.js"
   },
   "keywords": [
     "webdriverio",

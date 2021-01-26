@@ -29,9 +29,13 @@ sudo service mongod start / sudo systemctl start mongod (Ubuntu) / mongod (MacOS
 
 _Change the data in common/enviroment/.env.development_
 
+```
+run npm run start:dev
+```
+
 ## Run The Test ⚙️
 
-_npm run test_
+_start the server and other terminal run npm run test_
 
 ### Test end-to-end 🔩
 
