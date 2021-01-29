@@ -68,7 +68,7 @@ export const signUp = async (
     });
     await newUser.save()
     // return token 
-    return res.status(201).json({    success:true, token: await token.CreateToken(newUser) });
+    return res.status(201).json({ success: true, token: await token.CreateToken(newUser) });
 };
 
 

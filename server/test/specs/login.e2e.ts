@@ -36,9 +36,10 @@ describe('Login functionality test suite', () => {
     it('should login with valid credentials', () => {
         LoginPage.open();
         LoginPage.login(validusername, validpassword);
-       expect(SecurePage.flashAlert).toBeExisting();
+       expect(browser.getUrl()).toMatch('http://automationpractice.com/index.php?controller=my-account');
       // expect(SecurePage.flashAlert).toHaveTextContaining('Authentication succed.');
     });
+
 });
 
 
